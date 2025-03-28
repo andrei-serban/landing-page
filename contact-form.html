@@ -119,8 +119,6 @@ input[type='text']:focus, [type='email']:focus, textarea:focus {
 }
 
 select {
-  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
-  outline: none;
   -moz-appearance: none;
   -webkit-appearance: none;
 }
@@ -133,7 +131,7 @@ select::-ms-expand {
   width: 100%;
 }
 
-.telephone {
+.company {
   width: 100%;
 }
 
@@ -234,14 +232,19 @@ textarea {
 }
 </style>
 
-<div class=head>
+
+
 <title>Contact Form</title>
-</head>
+
+
+<div class=head>
+
 <body>
 
 <h1>Launch & Grow Your Online Presence</h1>
 <div id="container">
-  <h3>&bull; Get a Free Consultation with Our Experts – Includes a Custom Strategy for Your Website or Store &bull;</h3>
+  <h3>&bull; Get a Free Consultation with Our Experts &bull;</h3>
+  <h4>&bull;Includes a Custom Strategy for Your Website or Store &bull;</h4>
   <div class="underline">
   </div>
   <div class="icon_wrapper">
@@ -258,23 +261,24 @@ textarea {
     </div>
     <div class="telephone">
       <label for="name"></label>
-      <input type="text" placeholder="My number is" name="telephone" id="telephone_input" required>
+      <input type="text" placeholder="My company is" name="telephone" id="Company_input" required>
     </div>
     <div class="subject">
       <label for="subject"></label>
       <select placeholder="Subject line" name="subject" id="subject_input" required>
-        <option disabled hidden selected>Subject line</option>
-        <option>I'd like to start a project</option>
-        <option>I'd like to ask a question</option>
-        <option>I'd like to make a proposal</option>
+        <option disabled hidden selected>What Are You Looking For?</option>
+        <option>WordPress Website Design</option>
+        <option>WooCommerce Store Setup / Optimization</option>
+        <option>Shopify Store Setup / Optimization</option>
+        <option>Other – Describe below</option>
       </select>
     </div>
     <div class="message">
       <label for="message"></label>
-      <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5" required></textarea>
+      <textarea name="message" placeholder="Tell us about your goals" id="message_input" cols="30" rows="5" required></textarea>
     </div>
     <div class="submit">
-      <input type="submit" value="Send Message" id="form_button" />
+      <input type="submit" value="Get My Free Strategy Session" id="form_button" />
     </div>
   </form><!-- // End form -->
 </div><!-- // End #container -->
