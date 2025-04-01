@@ -102,8 +102,8 @@ input[type='text'], [type='email'], select, textarea {
 }
 
 input[type='text']:focus, [type='email']:focus, textarea:focus {
-	    outline: none;
-	    padding: 0 0 0.875em 0;
+	outline: none;
+	padding: 0 0 0.875em 0;
 }
 
       .message {
@@ -111,8 +111,8 @@ input[type='text']:focus, [type='email']:focus, textarea:focus {
 }
 
 .name {
-	    float: left;
-	    width: 45%;
+	float: left;
+	width: 45%;
 }
 
 select {
