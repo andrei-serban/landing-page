@@ -1,7 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 @font-face {
-    font-family: 'AllerBold';
+    font-family: 'NovecentowideMediumRegular';
     src: url('fonts/aller_bd-webfont.eot');
     src: url('fonts/aller_bd-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/aller_bd-webfont.woff') format('woff'),
@@ -297,8 +296,14 @@ textarea {
       }
 }
 
-.head{
-
-      margin: 0 auto;
-      text-align: center;
-}
+.footer {
+            font-family: 'NovecentowideMediumRegular';
+            clear: both;
+            font-size: 14px;
+            padding-top: 40px;
+            text-align: center;
+            padding-bottom: 40px;
+            color: #6b6247;
+            line-height: 20px;
+            text-transform: uppercase;
+      }
