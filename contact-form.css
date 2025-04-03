@@ -45,7 +45,7 @@ body {
 
 button {
       overflow: visible;
-}
+      }
 
 button, select {
       text-transform: none;
@@ -212,7 +212,7 @@ textarea {
 
 #form_button {
       background: none;
-            color: #474544;
+      mccolor: #474544;
       cursor: pointer;
       display: inline-block;
       font-family: 'Helvetica', Arial, sans-serif;
@@ -352,24 +352,6 @@ a.fb {
 }
 
 .button {
-      float: left;
-      background-color: #111; 
-      border: 0 none; 
-      border-radius: 4px; 
-      transition: all 0.23s ease-in-out 0s; 
-      color: #FFFFFF; 
-      cursor: pointer; 
-      display: inline-block; 
-      font-size:15px; 
-      font-weight: normal; 
-      height: 32px; 
-      line-height: 32px; 
-      margin: 0 5px 10px 0; 
-      padding-left: 8px;
-      padding-right: 8px; 
-      text-decoration: none; 
-      vertical-align: top; 
-      white-space: nowrap; 
-      width: fit-content; 
-      width: -moz-fit-content;
+      font-size: 12px !IMPORTANT;
+      font-family: 'NovecentowideMediumRegular' !important;
 }
