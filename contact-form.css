@@ -174,7 +174,7 @@ select {
 }
 
 select::-ms-expand {
-      display: none;
+      display: inline-block;
 }
 
 .subject {
