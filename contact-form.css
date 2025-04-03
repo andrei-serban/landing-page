@@ -172,12 +172,16 @@ input[type='text']:focus, [type='email']:focus, textarea:focus {
 select {
       -moz-appearance: none;
       -webkit-appearance: none;
+      font-size: 14px !important;
+      font-family: 'NovecentowideMediumRegular' !important;
 }
 
-select::-ms-expand {
+      select::-ms-expand {
       display: inline-block;
+      font-size: 14px !important;
+      font-family: 'NovecentowideMediumRegular' !important;
 }
-
+      
 .subject {
       width: 100%;
 }
@@ -298,9 +302,22 @@ a.fb {
 
 @media (max-width: 999px) {
       .vetted-by { display: none;  }
+      
+      select {
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            font-size: 12px !important;
+            font-family: 'NovecentowideMediumRegular' !important;
+      }
+
+      select::-ms-expand {
+            display: inline-block;
+            font-size: 12px !important;
+            font-family: 'NovecentowideMediumRegular' !important;
+      }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 760px) {
       .page-content { padding: 50px 15px; }
       h1 { font-size: 25px; }
 
@@ -317,16 +334,42 @@ a.fb {
       .footer { padding-bottom: 30px; }
 
       input[type='text'], [type='email'], select, textarea { font-size: 0.65em; }
+
+      select {
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            font-size: 9px !important;
+            font-family: 'NovecentowideMediumRegular' !important;
+      }
+
+      select::-ms-expand {
+            display: inline-block;
+            font-size: 9px !important;
+            font-family: 'NovecentowideMediumRegular' !important;
+      }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480x) {
       .underline { width: 68px; }
   
       #form_button { padding: 15px 25px; }
       input[type='text'], [type='email'], select, textarea { font-size: 0.65em; }
-  }
 
-@media screen and (max-width: 420px) {
+      select {
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            font-size: 7px !important;
+            font-family: 'NovecentowideMediumRegular' !important;
+      }
+
+      select::-ms-expand {
+            display: inline-block;
+            font-size: 7px !important;
+            font-family: 'NovecentowideMediumRegular' !important;
+      }
+}
+
+@media screen and (max-width: 430px) {
       .icon {
             height: 35px;
             width: 35px;
@@ -337,13 +380,54 @@ a.fb {
       }
   
       input[type='text'], [type='email'], select, textarea {    
-      font-size: 0.65em;
+            font-size: 0.65em;
+      }
+
+      select {
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            font-size: 6px !important;
+            font-family: 'NovecentowideMediumRegular' !important;
+      }
+
+      select::-ms-expand {
+            display: inline-block;
+            font-size: 6px !important;
+            font-family: 'NovecentowideMediumRegular' !important;
+      }
+}
+
+@media screen and (max-width: 375px) {
+      .icon {
+            height: 35px;
+            width: 35px;
+      }
+  
+     .underline {
+            width: 53px;
+      }
+  
+      input[type='text'], [type='email'], select, textarea {    
+            font-size: 0.65em;
+      }
+
+      select {
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            font-size: 5px !important;
+            font-family: 'NovecentowideMediumRegular' !important;
+      }
+
+      select::-ms-expand {
+            display: inline-block;
+            font-size: 5px !important;
+            font-family: 'NovecentowideMediumRegular' !important;
       }
 }
 
 #mc_embed_signup input.button {
       display: inline-block !important;
-      font-size: 12px !important;
+      font-size: 11px !important;
       font-family: 'NovecentowideMediumRegular' !important;
       padding: 0px 15px !important;
       background-color: transparent !important;
