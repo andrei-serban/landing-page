@@ -51,7 +51,7 @@ button, select {
       text-transform: none;
 }
 
-button, input, select, textarea {
+button, input, select, textarea {    
       color: #6b6247;
       font: inherit;
       margin: 0;
@@ -131,9 +131,10 @@ h2, h3, h4 {
       width: 45%;
 }
 
-input[type='text'], [type='email'], select, textarea {
+input[type='text'], [type='email'], select, textarea {                
+      border: none !important;
+      border-bottom: solid 2px #474544 !important;
       background: none;
-      border: none;
       border-bottom: solid 2px #474544;
       color: #474544;
       font-size: 1.000em;
@@ -243,9 +244,9 @@ textarea {
       padding-bottom: 100px;
 }
 .share-buttons a {
-  background: url(icons.png) no-repeat;
-  display: inline-block;
-  height: 49px;
+      background: url(icons.png) no-repeat;
+      display: inline-block;
+      height: 49px;
   margin-right: 20px;
   width: 150px;
   text-align: center;
@@ -335,24 +336,23 @@ a.fb {
             width: 53px;
       }
   
-      input[type='text'], [type='email'], select, textarea {
-            font-size: 0.65em;
+      input[type='text'], [type='email'], select, textarea {    
+      font-size: 0.65em;
       }
 }
 
-.button {
+#mc_embed_signup input.button {
       display: inline-block !important;
       font-size: 12px !important;
       font-family: 'NovecentowideMediumRegular' !important;
       padding: 0px 15px !important;
       background-color: transparent !important;
-      border: 2px #6B62475 !important;
-      border-radius: 4px !important;
+      border: solid  2px #6B6247 !important;
       cursor: pointer !important;
       color: black !important;
 }
 
-.button:hover {
+#mc_embed_signup input.button:hover {
       background: #6B6247 !important;
       color: white !important;
 }
