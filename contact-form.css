@@ -68,7 +68,7 @@ textarea {
 form {
       border: solid 3px #6b6247;
       padding: 37.5px;
-      margin: 50px 0;
+      margin: 0px;
 }
 
 h1 {
@@ -79,6 +79,8 @@ h1 {
       text-align: center;
       text-transform: uppercase;
       text-shadow: 4px 4px 1px #c1c7b4;
+      max-width: 800px;
+      margin: 0px auto;
 }
 
 h2, h3, h4 {
@@ -94,7 +96,7 @@ h2, h3, h4 {
 .page-content {
       padding: 80px 0px;
       background: url(bkg-blue-noise.png) center top repeat;
-      width: 100%;
+      width: auto;
 }
 
 #mc_embed_signup {
@@ -102,7 +104,7 @@ h2, h3, h4 {
     /*font-family: 'NovecentowideBookRegular';  */
 }
 #mc_embed_shell {
-      max-width: 800px;
+      max-width: 620px;
       margin: 0px auto;
 }
 .underline {
@@ -231,64 +233,22 @@ textarea {
       background: #474544;
       color: #F2F3EB;
 }
-
-@media screen and (max-width: 768px) {
-      #container {
-            margin: 20px auto;
-            width: 95%;
-      }
-      input[type='text'], [type='email'], select, textarea {
-            font-size: 0.65em;
-      }
+.get-strategy-btn {
+      background-color: transparent;
+      padding: 10px;
+      border-radius: 5px;
+      border-color: #6b6247;
 }
-
-@media screen and (max-width: 480px) {
-      h1 {
-            font-size: 26px;
-      }
-  
-      .underline {
-            width: 68px;
-      }
-  
-      #form_button {
-            padding: 15px 25px;
-            }
-      input[type='text'], [type='email'], select, textarea {
-            font-size: 0.65em;
-      }
-  }
-
-@media screen and (max-width: 420px) {
-      h1 {
-            font-size: 18px;
-      }
-  
-      .icon {
-            height: 35px;
-            width: 35px;
-      }
-  
-     .underline {
-            width: 53px;
-      }
-  
-      input[type='text'], [type='email'], select, textarea {
-            font-size: 0.65em;
-      }
-}
-
 .footer {
-            font-family: 'NovecentowideBookRegular';
-            clear: both;
-            font-size: 14px;
-            text-align: center;
-            color: #6b6247;
-            line-height: 20px;
-            text-transform: uppercase;
-            padding-bottom: 100px;
+      font-family: 'NovecentowideBookRegular';
+      clear: both;
+      font-size: 14px;
+      text-align: center;
+      color: #6b6247;
+      line-height: 20px;
+      text-transform: uppercase;
+      padding-bottom: 100px;
 }
-
 .share-buttons a {
   background: url(icons.png) no-repeat;
   display: inline-block;
@@ -296,7 +256,8 @@ textarea {
   margin-right: 20px;
   width: 150px;
   text-align: center;
-  padding-bottom: 75px;
+
+  &:hover { opacity: 0.8; }
 }
 
 a.linkedin {
@@ -312,39 +273,27 @@ a.fb {
 }
 
 .vetted-by {
-            left: 0px;
-            bottom: 0px;
-            margin: 0px;
-            z-index: 3000;
-            padding: 15px;
-            font-size: 21px;
-            position: fixed;
-            text-align: center;
-            background: #ECF2D8;
-            list-style-type: none;
-            border: 2px solid #696446;
-            border-bottom-width: 2px;
-            border-bottom-style: solid;
-            border-bottom-color: rgb(105, 100, 70);
-            border-left-width: 2px;
-            border-left-style: solid;
-            border-left-color: rgb(105, 100, 70);
-            border-left: 0px none;
-            border-bottom: 0px none;
-            text-shadow: 3px 3px #c1c7b4;
-            font-family: 'NovecentowideBoldBold';
-}
-
-.tree1 {
-            position:absolute;
-            top: 160px;
-            left:60px;
-}
-
-.tree2 {
-            position:absolute;
-            top: 250px;
-            right:45px;
+      left: 0px;
+      top: 0px;
+      margin: 0px;
+      z-index: 3000;
+      padding: 15px;
+      font-size: 21px;
+      position: fixed;
+      text-align: center;
+      background: #ECF2D8;
+      list-style-type: none;
+      border: 2px solid #696446;
+      border-bottom-width: 2px;
+      border-bottom-style: solid;
+      border-bottom-color: rgb(105, 100, 70);
+      border-left-width: 2px;
+      border-left-style: solid;
+      border-left-color: rgb(105, 100, 70);
+      border-left: 0px none;
+      border-bottom: 0px none;
+      text-shadow: 3px 3px #c1c7b4;
+      font-family: 'NovecentowideBoldBold';
 }
 
 .deskContent {
@@ -353,12 +302,47 @@ a.fb {
     background-size: contain; 
 }
 
-@media all and (max-width: 768px) {
-    .deskContent {display:none;}
-    .phoneContent {display:block;}
+@media (max-width: 999px) {
+      .vetted-by { display: none;  }
 }
 
-@media all and (max-width: 417px) {
-    .deskContent {display:none;}
-    .phoneContent {display:block;}
+@media screen and (max-width: 767px) {
+      .page-content { padding: 50px 15px; }
+      h1 { font-size: 25px; }
+
+      .decorator-1 {
+            margin: 10px auto;
+            scale: 0.6;
+      }
+      h2 { font-size: 18px; }
+
+      h3 { font-size: 16px; }
+
+      .deskContent { display: none; }
+
+      .footer { padding-bottom: 30px; }
+
+      input[type='text'], [type='email'], select, textarea { font-size: 0.65em; }
+}
+
+@media screen and (max-width: 480px) {
+      .underline { width: 68px; }
+  
+      #form_button { padding: 15px 25px; }
+      input[type='text'], [type='email'], select, textarea { font-size: 0.65em; }
+  }
+
+@media screen and (max-width: 420px) {
+      .icon {
+            height: 35px;
+            width: 35px;
+      }
+  
+     .underline {
+            width: 53px;
+      }
+  
+      input[type='text'], [type='email'], select, textarea {
+            font-size: 0.65em;
+      }
 }
